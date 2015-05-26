@@ -48,18 +48,18 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>org.jogger</groupId>
+			<groupId>org.mokai</groupId>
 			<artifactId>jogger-core</artifactId>
-			<version>0.5.0</version>
+
 		</dependency>
-		
-		<dependency>
-			<groupId>org.jogger</groupId>
-			<artifactId>jogger-spring</artifactId>
-			<version>0.5.0</version>
-		</dependency>
-		
-		<dependency>
+        <dependency>
+            <groupId>org.mokai</groupId>
+            <artifactId>jogger-spring</artifactId>
+
+        </dependency>
+
+
+        <dependency>
 			<groupId>org.jasypt</groupId>
 			<artifactId>jasypt</artifactId>
 			<version>1.7.1</version>
@@ -79,6 +79,10 @@
 			<id>consol</id>
 			<url>http://labs.consol.de/maven/repository</url>
 		</repository>
+        <repository>
+            <id>greenrepo</id>
+            <url>http://nexus-greencodetn.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
 	</repositories>
 
 </project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mokai:jogger:0.2.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jogger/pom.xml!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/jogger/jogger-0.2.2-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/jogger/jogger-0.2.2-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

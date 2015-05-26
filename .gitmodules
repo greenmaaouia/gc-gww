@@ -1,0 +1,9 @@
+[submodule "jmx-annotations"]
+	path = jmx-annotations
+	url = https://github.com/germanescobar/jmx-annotations.git
+[submodule "jogger"]
+	path = jogger
+	url = https://github.com/elibom/jogger.git
+[submodule "smpp-server"]
+	path = smpp-server
+	url = https://github.com/elibom/smpp-server.git

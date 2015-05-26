@@ -29,7 +29,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.gescobar</groupId>
+			<groupId>org.mokai</groupId>
 			<artifactId>jmx-annotations</artifactId>
 		</dependency>
 
@@ -149,26 +149,7 @@
 				</executions>
 			</plugin>
 
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
-					<execution>
-						<id>javadoc-jar</id>
-						<phase>package</phase>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-						<configuration>
-							<includeDependencySources>true</includeDependencySources>
-							
-							<dependencySourceIncludes>
-								<dependencySourceInclude>org.mokai:mokai-spi</dependencySourceInclude>
-							</dependencySourceIncludes>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+
 		</plugins>
 	</build>
 

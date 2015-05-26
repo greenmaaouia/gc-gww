@@ -17,6 +17,9 @@
 		<module>mokai-boot</module>
 		<module>mokai-assembly</module>
 		<module>mokai-web-admin</module>
+        <module>jmx-annotations</module>
+        <module>jogger</module>
+        <module>smpp-server</module>
 	</modules>
 	
 	<dependencies>
@@ -91,7 +94,7 @@
 			</dependency>
 			
 			<dependency>
-				<groupId>net.gescobar</groupId>
+				<groupId>org.mokai</groupId>
 				<artifactId>jmx-annotations</artifactId>
 				<version>1.0.0</version>
 			</dependency>
@@ -114,7 +117,21 @@
 				<version>${testng.version}</version>
 				<scope>test</scope>
 			</dependency>
-			
+            <dependency>
+                <groupId>org.mokai</groupId>
+                <artifactId>smpp-server</artifactId>
+                <version>0.4.3-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mokai</groupId>
+                <artifactId>jogger-core</artifactId>
+                <version>0.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mokai</groupId>
+                <artifactId>jogger-spring</artifactId>
+                <version>0.5.0</version>
+            </dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -131,8 +148,8 @@
 	</properties>
 
 	<scm>
-		<url>scm:git:git@github.com:germanescobar/mokai.git</url>
-		<connection>scm:git:git@github.com:germanescobar/mokai.git</connection>
+		<url>scm:git:git://github.com/greenmaaouia/gc-gww.git</url>
+		<connection>scm:git:git://github.com/greenmaaouia/gc-gww.git</connection>
 	</scm>
 	
 	<build>
@@ -168,70 +185,8 @@
 
 		</plugins>
 	</build>
-	
-	<distributionManagement>  
- 		<!-- Publish the versioned releases here -->  
- 		<repository>  
-  			<id>elibom</id>  
-  			<name>Elibom Nexus Repository</name>  
-  			<url>http://repository.elibom.net/nexus/content/repositories/releases</url>  
- 		</repository>  
-  
- 		<!-- Publish the versioned releases here -->  
- 		<snapshotRepository>  
-  			<id>elibom</id>  
-  			<name>Elibom Nexus Repository</name>  
-  			<url>http://repository.elibom.net/nexus/content/repositories/snapshots</url>  
- 		</snapshotRepository>  
-	</distributionManagement>
 
-	<repositories>
-		
-		<repository>
-			<id>apache.snapshots</id>
-			<name>Apache Development Snapshot Repository</name>
-			<url>https://repository.apache.org/content/repositories/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		
-		
-		
-		<repository>  
-  			<id>elibom</id>  
-  			<name>Elibom Nexus Repository</name>  
-  			<url>http://repository.elibom.net/nexus/content/repositories/releases</url>  
-  			<releases>  
-   				<enabled>true</enabled>  
-  			</releases>  
-  			<snapshots>  
-   				<enabled>true</enabled>  
-  			</snapshots>  
- 		</repository>
-		
-	</repositories>
-	
-	<pluginRepositories>
-		<pluginRepository>
-			<id>elibom-nexus</id>
-			<url>http://repository.elibom.net/nexus/content/groups/public</url>
-		</pluginRepository>
-		
-		<pluginRepository>
-			<id>codehaus-snapshots</id>
-			<name>Codehaus Snapshots</name>
-			<url>https://nexus.codehaus.org/content/groups/snapshots-group/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+
+
 
 </project>
